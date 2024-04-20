@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { View } from "react-native";
 
 export interface SpacerProps {
@@ -5,7 +6,7 @@ export interface SpacerProps {
   horizontal?: number;
 }
 
-export default function Spacer({ vertical, horizontal }: SpacerProps) {
+export const Spacer = memo(({ vertical, horizontal }: SpacerProps) => {
   return (
     <View
       style={{
@@ -14,4 +15,4 @@ export default function Spacer({ vertical, horizontal }: SpacerProps) {
       }}
     />
   );
-}
+});
