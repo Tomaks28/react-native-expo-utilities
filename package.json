@@ -1,6 +1,6 @@
 {
-  "name": "react-native-expo-utilities",
-  "version": "0.1.0",
+  "name": "@tomaks28/expo-utilities",
+  "version": "0.1.5",
   "description": "React Native Expo Utilities",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -13,7 +13,8 @@
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "ios": "npm run ios --prefix example",
-    "android": "npm run android --prefix example"
+    "android": "npm run android --prefix example",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "react-native",
