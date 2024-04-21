@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
-
-import * as ReactNativeExpoUtilities from 'react-native-expo-utilities';
+import { Spacer } from 'react-native-expo-utilities';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{ReactNativeExpoUtilities.hello()}</Text>
+      <Text>Example</Text>
+      <Spacer vertical={50} />
+      <Text>Example</Text>
     </View>
   );
 }
