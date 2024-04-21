@@ -10,7 +10,7 @@ interface BoxProps extends PropsWithChildren {
   ycenter?: boolean;
 }
 
-export default function Box({ children, ...props }: BoxProps) {
+export const Box = ({ children, ...props }: BoxProps) => {
   const memoizedStyles = useMemo(
     () => [
       props.flex && styles.flex,
@@ -24,7 +24,7 @@ export default function Box({ children, ...props }: BoxProps) {
   );
 
   return <View style={memoizedStyles}>{children}</View>;
-}
+};
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
